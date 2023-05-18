@@ -35,7 +35,11 @@ class App extends Component {
             <h1>Loading</h1> :
             (
                 <div className='tc'>
-                    <h1 className='f1'>RoboFriends</h1>
+                    <div className="Header">
+                        <h1 className='f1'>RoboFriends </h1>
+                        <p className="ptag">by </p>
+                        <p className="ptag">Abhijeet</p>
+                    </div>
                     <SearchBox searchChange={this.onSearchChange} />
                     <Scroll>
                         <CardList robots={filteredRobots} />
